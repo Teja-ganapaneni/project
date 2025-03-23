@@ -1,0 +1,26 @@
+#login{
+    
+    text-align: inline;
+    padding-left: 0cqb;
+    padding-top: 0dvh;
+   
+    
+}
+
+
+
+body{
+    background-image: url("background.jpeg");
+}
+
+newDiv{
+    width:"50%";
+   height : "60%";
+position : "fixed";
+background-Color : "#ffff00";
+ top : "20%"; 
+left :"25%"; 
+color:'white';
+z-Index :"1000";
+}
+

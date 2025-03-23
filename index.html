@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>instaroom</title>
+    <link rel="stylesheet"href="login.html"/>
+    <link rel="stylesheet" herf="index.html"/>
+    <style>
+      
+       html{
+        scroll-behavior: smooth;
+       }
+        h1{
+            text-align:left;
+            color: tomato;
+            font-size: 50px;
+            font-family: Arial, sans-serif;
+            background-color: black;
+        }
+        li{
+            display: inline;
+            margin: 30px;
+            font-size: 2.5rem;
+            font-family: Arial, sans-serif;
+            color: blueviolet;
+           
+           
+            
+        }
+        nav{
+            border: 1px solid black;
+        }
+        button{
+            
+            background-color: blanchedalmond;
+            border-radius: 10px;
+            padding-inline: 10px;
+        }
+        div{
+            background-color:none;
+            color: rgb(192, 12, 12);
+        }
+        footer{
+            background-color: blanchedalmond;
+        }
+         #about-us{
+            text-align: center;
+           background-color: black;
+           color: whitesmoke;
+        }
+        #container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    background-color:#82b8ff;
+
+   
+
+}
+
+#container div{
+    height: 250px;
+    width: 300px;
+    background:greenyellow;
+    margin: 60px;
+    text-align: center;
+    text-decoration-color: aqua;
+
+}
+
+     </style>
+</head>
+<body>
+    
+    <h1 id="home">instaRoom</h1>
+    <nav>
+    <ul>
+      
+     <a href=""><li>Home</li></a>
+      <a href="#booking"><li>Booking</li></a> 
+      <a href="signin.html" ><li>sign-in</li></a>
+       <li id="login"> login</li>
+       <a href="#about-us"><li> About us</li></a>
+    </nav>
+
+    </ul>
+
+  <a href="#home" ><img src="img.jpeg" alt="background" width="100%" height="500px"></a> 
+  <div id="booking">
+    <form>
+        <table>
+            <tr>
+        <label> Enter the UserName</label><input type="text"/><br>
+        <label>Enter the Emailid</label><input type="mail"/>
+       <br>
+
+        <label>PhoneNumber</label><input type="Connumber"/><br>
+         <label> StateName</label><input type="state"/><br>
+         <label>CityName</label><input type="city"/><br>
+        
+         <label>Gender</label><input type="radio" name="Gender" value="male"/>male
+        <input  type="radio" name="Gender" value="female"/>female
+        <input type="submit" id="submit"><br>
+        <input type="reset">
+        </tr>
+    </table>
+    </div>
+    <div id="container">
+        
+        <script>
+            const rooms = [
+                { pno: 18, hotelName: "Teja", location: "Chennai", price: 5000, rating: 4.5 },
+                { pno: 19, hotelName: "Green Leaf", location: "Mumbai", price: 4500, rating: 4.2 },
+                { pno: 20, hotelName: "Blue Ocean", location: "Goa", price: 7000, rating: 4.8 },
+                { pno: 21, hotelName: "Sunrise Inn", location: "Delhi", price: 6000, rating: 4.3 },
+                {pno:22, hotelName: "Silver Leaf", location:"vijayawada",price:6000,rating:4.6},
+
+                
+            ];
+    
+            const container = document.getElementById("container");
+    
+            rooms.forEach(room => {
+                const roomDiv = document.createElement("div");
+                roomDiv.innerHTML = `
+                    <h3>${room.hotelName} (Room No: ${room.pno})</h3>
+                    <p>Location: ${room.location}</p>
+                    <p>Price: ₹${room.price}</p>
+                    <p>Rating: ⭐${room.rating}</p>
+                    <hr>
+                `;
+                container.appendChild(roomDiv);
+            });
+        </script><br>
+        <br>
+
+       
+        </div>
+
+    <footer>
+       
+      
+        
+        </p>
+        <script src="script.js" ></script>
+    </div>
+            <div>
+            <p>copy right 2021</p>
+            </div>
+        </footer>
+    </form>
+  
+    
+</body>
+</html>
